@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json",
     "clear": "rm -rf node_modules/ npm-debug.log"
   },
   "author": "",
@@ -14,7 +14,9 @@
     "rxjs": "6.4.0"
   },
   "devDependencies": {
+    "@types/jasmine": "3.3.12",
     "@types/node": "11.13.4",
+    "jasmine": "3.4.0",
     "nodemon": "1.18.11",
     "ts-node": "8.1.0",
     "typescript": "3.4.3"
