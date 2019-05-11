@@ -1,7 +1,7 @@
 import { from } from "rxjs";
 
-const values = ["foo", "bar", "baz"];
+import { square } from "./helpers";
 
-const source$ = from(values);
+const source$ = from([1, 2, 3]);
 
-source$.subscribe(v => console.log("Value", v));
+square(source$).subscribe(v => console.log("Value", v));
